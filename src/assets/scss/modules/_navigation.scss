@@ -1,0 +1,63 @@
+// Navigation breakpoints
+.mobile-menu,
+.site-title-bar {
+  @include hide-for(medium);
+}
+//
+.desktop-menu,
+.site-navigation .top-bar-left {
+  @include show-for(medium);
+}
+
+// Site title
+.site-desktop-title a {
+  font-weight: bold;
+}
+
+// WP post navigation
+.post-navigation {
+  @include clearfix;
+}
+
+.nav-previous {
+  float:left;
+}
+
+.nav-next {
+  float:right;
+}
+
+.top-bar,.title-bar{
+  background-color: $stone;
+  ul{
+    background-color: $stone;
+  }
+  &-right{
+    .menu{
+      li{
+        a{
+          color:$moss-green;
+          text-transform:uppercase;
+          font-weight:600;
+          &:hover{
+            color:$burnt-orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+.title-bar{
+  &-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu-icon{
+      &::after {
+        background: $moss-green;
+        box-shadow: 0 7px 0 $moss-green, 0 14px 0 $moss-green;
+      }
+    }
+  }
+}

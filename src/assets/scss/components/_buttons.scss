@@ -1,0 +1,20 @@
+.sites-button {
+  background: $primary-color;
+  font-size: 1.25rem;
+  font-weight: bold;
+  box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+  border-radius: 3px;
+  border: none;
+}
+.btn{
+  background: $burnt-orange;
+  color:$stone;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.5s all ease-in;
+  &:hover{
+    color: $burnt-orange;
+    background:$stone;
+  }
+}
